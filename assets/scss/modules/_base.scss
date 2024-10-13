@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  font-size: $text-body;
+  font-family: $font-family-roboto;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+p {
+  line-height: 2;
+}
+h1 {
+  font-size: $h1;
+  font-weight: 700;
+  font-family: $font-family-tinos;
+  letter-spacing: 5px;
+}
+h2 {
+  font-size: $h2;
+  font-weight: 700;
+  font-family: $font-family-tinos;
+}
+.h6-text {
+  font-size: $h6;
+  font-family: $font-family-tinos;
+}
+.body-text {
+  font-size: $text-body;
+}
+.body-2-text {
+  font-size: $text-body-2;
+}
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+.font-weight-bold {
+  font-weight: 700;
+  color: inherit;
+}
+.primary-text {
+  color: $primary;
+}
+.secondary-text {
+  color: $secondary;
+}
+.blue-1-text {
+  color: $blue-1;
+}
+.blue-2-text {
+  color: $blue-2;
+}
+.black-text {
+  color: $black;
+}
+.white-text {
+  color: $white;
+}
+.primary-bg {
+  background-color: $primary;
+}
+.secondary-bg {
+  background-color: $secondary;
+}
+.blue-1-bg {
+  background-color: $blue-1;
+}
+.blue-2-bg {
+  background-color: $blue-2;
+}
+.black-bg {
+  background-color: $black;
+}
+.white-bg {
+  background-color: $white;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
