@@ -113,14 +113,14 @@ a {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .top-nav {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .top-nav a {
   font-size: 16px;
