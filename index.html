@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
   <body>
-    <section id="section-home">
+    <section id="section-home" class="section">
       <div class="container banner-flex--wrapper">
         <div class="banner-left--wrapper">
           <div class="accent-pink"></div>
@@ -14,33 +14,70 @@
         <div class="banner-right--wrapper">
           <nav class="top-nav">
             <a href="#section-home" class="active">Home</a>
-            <a href="#">Works</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#works">Works</a>
+            <a href="#about">About</a>
+            <a href="#collaboration">Contact</a>
           </nav>
           <div>
             <p class="h6-text blue-2-text">
               <span class="font-weight-bold">Kuntum</span> Chaera Senda
             </p>
             <div class="banner-title--wrapper">
-              <h1>Frontend<br />Engineer</h1>
+              <h1 id="title">Frontend<br />Engineer</h1>
             </div>
             <p class="banner-sub">
-              Since 2021 I started my career as a Frontend. The deeper I study
-              and work on applications on the frontend side, the more passionate
-              I feel about the role. Like thinking logically to process data
-              with javascript for UI needs, Creating an attractive and
-              user-friendly UI, Integrating with API services, maximizing SEO
-              and application performance.
+              Hi... My name is Kuntum, nice to meet you. I would like to welcome
+              you with my personal Portofolio. And this is...
             </p>
-            <a
-              href="https://ecommerce.antm.tech/mobile-link/brankas-register"
-              class="link-blue-2"
-              >My Story</a
-            >
+            <a id="my-story" class="link-blue-2">My Story</a>
           </div>
         </div>
       </div>
     </section>
+    <section id="collaboration" class="section section-collaboration">
+      <div class="container">
+        <div>
+          <p class="text-collaboration-small primary-text">Collaboration</p>
+          <h2 class="text-collaboration">
+            Let's Talk to <br />
+            Collaboration
+          </h2>
+          <button class="btn primary">Get In Touch</button>
+        </div>
+        <footer>
+          <hr />
+          <div class="footer-flex">
+            <div>
+              <blockquote>
+                &ldquo;Working in development has give me a <br />
+                stronger sense of the extraordinary in my digital work&rdquo;
+              </blockquote>
+              <small class="text-copyright"
+                >&copy; Kuntum Chaera Senda. All rights reserved 2024</small
+              >
+            </div>
+            <div class="link-sosmed--wrapper">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/kuntum-chaera-senda-95012b1b6/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+              <div>
+                <a href="#">Email</a>
+              </div>
+              <div>
+                <a href="#">Github</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+  <script src="./assets/script/gsap.js"></script>
 </html>

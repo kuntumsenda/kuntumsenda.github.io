@@ -1,0 +1,49 @@
+.section-collaboration {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+  button {
+    margin-top: 20px;
+  }
+}
+.text-collaboration {
+  font-size: 100px;
+  &-small {
+    font-weight: 700;
+  }
+}
+footer {
+  hr {
+    margin: 80px 0;
+  }
+}
+.footer-flex {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  blockquote {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+}
+.text-copyright {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.link-sosmed--wrapper {
+  text-align: right;
+  div {
+    margin: 8px 0;
+    &:hover {
+      a {
+        font-weight: 700;
+        color: $blue-2;
+      }
+    }
+  }
+  a {
+    font-size: 16px;
+  }
+}
