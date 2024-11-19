@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kuntum Chaera Senda</title>
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="space-50vh" style="height: 50vh"></div>
+    <div class="race-wrapper">
+      <div class="races" style="display: flex; gap: 20px">
+        <h2>MONACO</h2>
+        <h2>AUSTRIA</h2>
+        <h2>Hungary</h2>
+        <h2>Netherland</h2>
+        <h2>Indonesia</h2>
+      </div>
+    </div>
+    <div class="space-100vh" style="height: 100vh"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/script/gsap.js"></script>
+  <script src="./assets/script/swiper.js"></script>
+  <script>
+    const races = document.querySelector(".races");
+    let racesWidth = races.offsetWidth;
+    let amountToScroll = racesWidth - window.innerWidth;
+
+    const tween = gsap.to(races, {
+      x: -amountToScroll,
+      duration: 3,
+      ease: "none",
+    });
+    ScrollTrigger.create({
+      trigger: ".race-wrapper",
+      start: "top 20%",
+      end: "+= amountToScroll",
+      pin: true,
+      animation: tween,
+      scrub: 1,
+      markers: true,
+    });
+  </script>
+</html>

@@ -5,9 +5,11 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   font-size: $text-body;
   font-family: $font-family-roboto;
   color: $black;
+  overflow-x: hidden;
 }
 
 h1,
@@ -89,6 +91,9 @@ a {
 .white-bg {
   background-color: $white;
 }
+// .section {
+//   min-height: 100vh;
+// }
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -107,9 +112,10 @@ a {
     padding-right: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section {
-    min-height: 100vh;
+@media (min-width: $screen-lg) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 hr {

@@ -42,31 +42,43 @@
   position: relative;
   max-width: 471px;
   width: 100%;
-  min-height: 80vh;
+  height: 80vh;
+  border-radius: 0px 0px 217px 217px;
+  background: linear-gradient(
+    132.76deg,
+    #febbc2 0%,
+    #f39ca3 49.01%,
+    #e97f85 83.71%
+  );
   img {
     width: 100%;
     position: absolute;
     z-index: 100;
     border-radius: 217px;
     bottom: 0;
-    opacity: 0.5;
   }
   .accent-pink {
-    width: 100%;
-    height: calc(80vh - 210px);
-    background-color: $primary;
+    // width: 100%;
+    // height: 80vh;
+    // border-radius: 0px 0px 217px 217px;
+    // background: linear-gradient(
+    //   132.76deg,
+    //   #febbc2 0%,
+    //   #f39ca3 49.01%,
+    //   #e97f85 83.71%
+    // );
   }
-  &::before {
-    content: "";
-    width: 100%;
-    height: 420px;
-    border-radius: 0 0 50% 50%;
-    background-color: $primary;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  // &::before {
+  //   content: "";
+  //   width: 100%;
+  //   height: 420px;
+  //   border-radius: 0 0 50% 50%;
+  //   background-color: $primary;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
 }
 .banner-right--wrapper {
   padding-top: 40px;
@@ -98,3 +110,47 @@
 #my-story.full-screen:after {
   display: none;
 }
+.line-skill--wrapper {
+  margin: 40px 0;
+  position: relative;
+  min-height: 100px;
+}
+
+.line-skill {
+  background-color: $primary-dark;
+  padding: 30px;
+  position: absolute;
+  min-width: calc(100vw + 530px);
+  transform: rotate(-4.47deg);
+  left: -30px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  span {
+    position: relative;
+    padding-left: 12px;
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    &:not(:last-child),
+    &:not(:first-child) {
+      margin: 0 8px;
+    }
+  }
+  &.straight {
+    opacity: 0.2;
+    transform: rotate(1deg);
+    z-index: -1;
+    left: -300px;
+  }
+}
+// .section-home {
+//   min-height: calc(100vh - 170px);
+// }

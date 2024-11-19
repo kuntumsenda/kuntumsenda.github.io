@@ -1,33 +1,42 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.from(".banner-left--wrapper", {
-    scrollTrigger: {
-      trigger: ".banner-left--wrapper",
-      scrub: true,
-      start: "top bottom",
-      end: "top top",
-    },
-    scaleX: 0,
-    transformOrigin: "top center",
-    ease: "none",
-  });
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".top-nav", {
+  x: "0",
+  scrollTrigger: ".section-home",
+  duration: 0.5,
+});
+gsap.to("#my-info-1", {
+  y: "0",
+  scrollTrigger: ".section-home",
+  duration: 0.5,
+});
+gsap.to(".banner-left--wrapper", {
+  y: "0",
+});
+gsap.to(".container-about", {
+  y: "0",
+  scrollTrigger: ".container-about",
+  duration: 1,
+});
+gsap.to("#list-projects", {
+  y: "0",
+  scrollTrigger: "#list-projects",
+  duration: 1,
 });
 
-const square = document.querySelector("#my-story");
-square.addEventListener("click", () => {
-  const state = Flip.getState(square);
-  square.classList.toggle("full-screen");
-  Flip.from(state);
+const line1 = document.querySelector("#line-1");
+let line1Width = line1.offsetWidth - 60;
+let amountToScrollLine1 = line1Width - window.innerWidth;
+const tween = gsap.to(line1, {
+  x: -amountToScrollLine1,
+  duration: 3,
+  ease: "none",
 });
-
-const tl = gsap.timeline();
-
-tl.from(".banner-sub", 1.8, {
-  y: -50,
-  ease: "power4.out",
-  delay: 0,
-  skewY: 5,
-  stagger: {
-    amount: 0.3,
-  },
+ScrollTrigger.create({
+  trigger: ".line-skill--wrapper",
+  start: "bottom 40%",
+  end: "100px",
+  pin: true,
+  animation: tween,
+  scrub: 1,
+  markers: false,
 });

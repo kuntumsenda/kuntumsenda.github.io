@@ -3,22 +3,29 @@
   <head>
     <title>Kuntum Chaera Senda</title>
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
   </head>
   <body>
-    <section id="section-home" class="section">
+    <section id="section-home" class="section section-home">
       <div class="container banner-flex--wrapper">
-        <div class="banner-left--wrapper">
-          <div class="accent-pink"></div>
+        <div
+          class="banner-left--wrapper"
+          style="transform: translate(0, -30px)"
+        >
           <img src="./assets/image/photo-banner.png" alt="kuntum_photo" />
         </div>
         <div class="banner-right--wrapper">
-          <nav class="top-nav">
+          <nav class="top-nav" style="transform: translate(30px, 0)">
             <a href="#section-home" class="active">Home</a>
-            <a href="#works">Works</a>
-            <a href="#about">About</a>
+            <a href="#about-me">About Me</a>
+            <a href="#project">Works</a>
             <a href="#collaboration">Contact</a>
           </nav>
-          <div>
+          <div id="my-info-1" style="transform: translate(0, 30px)">
             <p class="h6-text blue-2-text">
               <span class="font-weight-bold">Kuntum</span> Chaera Senda
             </p>
@@ -29,11 +36,171 @@
               Hi... My name is Kuntum, nice to meet you. I would like to welcome
               you with my personal Portofolio. And this is...
             </p>
-            <a id="my-story" class="link-blue-2">My Story</a>
+            <a id="my-story" href="#about-me" class="link-blue-2">My Story</a>
           </div>
+        </div>
+        <!-- <div style="position: relative">
+          <img
+            src="./assets/image/photo-banner1.png"
+            alt="photo_banner"
+            width="100%"
+            style="position: absolute; bottom: -50px"
+          />
+        </div> -->
+      </div>
+    </section>
+
+    <section id="about-me" class="section section-about secondary-bg">
+      <div
+        class="container container-about"
+        style="transform: translateY(100px)"
+      >
+        <h2 id="title-about">ABOUT ME</h2>
+        <p id="desc-about">
+          I started my career as a Frontend in 2021. I'm used to working with
+          Teams or Individual. I've always worked on Web Application Projects
+          using React and Vue. But Now, I'm starting to focus on Develop my
+          Skills, as Frontend to Learn Mobile Development and starting to be
+          motivated to learn Backend Development.
+        </p>
+        <div class="skills">
+          <p>Programming Language, Framework that I've used</p>
+          <img width="100px" src="./assets/icon/vue.js.svg" alt="vue.js" />
+          <img width="100px" src="./assets/icon/reactjs.svg" alt="react.js" />
+          <img width="100px" src="./assets/icon/js.svg" alt="javascript" />
+          <img width="100px" src="./assets/icon/python.svg" alt="python" />
+          <img width="100px" src="./assets/icon/nuxtjs.svg" alt="nuxt.js" />
+          <img width="100px" src="./assets/icon/nextjs.svg" alt="next.js" />
+          <img width="100px" src="./assets/icon/html.svg" alt="html" />
+          <img width="100px" src="./assets/icon/css.svg" alt="css" />
+          <img width="100px" src="./assets/icon/sass.svg" alt="sass" />
+          <img width="100px" src="./assets/icon/stylus.svg" alt="stylus" />
         </div>
       </div>
     </section>
+
+    <section id="project" class="section section-project">
+      <div class="container container-project">
+        <div>
+          <h2>My Portofolio</h2>
+          <div class="swiper swiper-project">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span>Ecommerce</span>
+                <div class="swiper-content-img">
+                  <img src="./assets/image/p-antam.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <span>IBB Portal Victoria Bank</span>
+                <div class="swiper-content-img">
+                  <img src="./assets/image/p-bvic.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <span class="title-project-mcrypto"
+                  >Landing Page <br />Motion Crypto</span
+                >
+                <div class="swiper-content-img">
+                  <img
+                    src="./assets/image/p-mCrypto.png"
+                    style="margin-top: 0"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="project-right--wrapper">
+          <ul id="list-projects" style="transform: translateY(100px)">
+            <li class="project-1">
+              <img src="./assets/image/btpn.png" alt="btpn_syariah" />
+              <div>
+                <div class="project-title">Cash Management Activity</div>
+                <p class="project-desc">
+                  Dashboard for managing Kas Besar, Teller Exchange, Cash Opname
+                  banking
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/image/btpn.png" alt="btpn_syariah" />
+              <div>
+                <div class="project-title">Document Management</div>
+                <p class="project-desc">
+                  Dashboard for managing document of customer banking
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/image/btpn.png" alt="btpn_syariah" />
+              <div>
+                <div class="project-title">Claim Pen UI Web</div>
+                <p class="project-desc">
+                  Dashboard for Claim Insurance Banking
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/image/mnc.png" alt="mnc" />
+              <div>
+                <div class="project-title">Stock Dashboard MNC</div>
+                <p class="project-desc">Dashboard for view Owner Stock</p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/image/flashmobile.png" alt="flashmobile" />
+              <div>
+                <div class="project-title">Flash Mobile</div>
+                <p class="project-desc">Payment Gateway Dashboard</p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/image/mnc.png" alt="mnc" />
+              <div class="project-title">Landing Page MNC Plus</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="line-skill--wrapper">
+      <div id="line-1" class="line-skill">
+        <span>VUE.JS</span>
+        <span>REACT.JS</span>
+        <span>NUXT.JS</span>
+        <span>NEXT.JS</span>
+        <span>JAVASCRIPT</span>
+        <span>Python</span>
+        <span>ANTDESIGN</span>
+        <span>QUASAR</span>
+        <span>VUETIFY</span>
+        <span>STYLUS</span>
+        <span>TYPESCRIPT</span>
+        <span>NODE.JS</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SASS</span>
+        <span>JIRA</span>
+      </div>
+      <div id="line-2" class="line-skill straight">
+        <span>DEVELOPMENT</span>
+        <span>WEBSITE</span>
+        <span>PWA</span>
+        <span>VUE.JS</span>
+        <span>NUXT.JS</span>
+        <span>REACT.JS</span>
+        <span>NEXT.JS</span>
+        <span>JAVASCRIPT</span>
+        <span>TYPESCRIPT</span>
+        <span>HTML</span>
+        <span>JIRA</span>
+        <span>ASANA</span>
+        <span>FIREBASE</span>
+      </div>
+    </div>
     <section id="collaboration" class="section section-collaboration">
       <div class="container">
         <div>
@@ -79,5 +246,18 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./assets/script/gsap.js"></script>
+  <script src="./assets/script/swiper.js"></script>
+  <script>
+    Swal.fire({
+      position: "center",
+      icon: "warning",
+      title: "Under Development",
+      showConfirmButton: false,
+      timer: 0,
+      allowOutsideClick: false,
+    });
+  </script>
 </html>
