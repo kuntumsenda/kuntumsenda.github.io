@@ -99,21 +99,15 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-@media (min-width: $screen-sm) {
-  .container {
+  @media (min-width: $screen-sm) {
     padding-left: 40px;
     padding-right: 40px;
   }
-}
-@media (min-width: $screen-md) {
-  .container {
+  @media (min-width: $screen-md) {
     padding-left: 60px;
     padding-right: 60px;
   }
-}
-@media (min-width: $screen-lg) {
-  .container {
+  @media (min-width: $screen-lg) {
     padding-left: 0;
     padding-right: 0;
   }
